@@ -1,13 +1,7 @@
-# Your first background job
+# First Background Job
 
-## Job design
+The job receives a project slug, fetches repository metadata, validates the response, and stores a short summary.
 
-A background job receives a project slug, fetches repository metadata, validates the response, and stores a compact summary.
+It is safe to retry because the project slug is the idempotency key. Temporary network failures use a bounded retry count. The log records success or failure without exposing credentials.
 
-## Safety
-
-The job is idempotent by project slug, retries transient network failures with a bounded limit, records the final status, and exposes no credentials in logs.
-
-## Completion criteria
-
-A successful run stores the summary. A failed run stores the error and can be retried without duplicating the record.
+The useful connection to my portfolio is the same one I use in data engineering: keep slow enrichment work off the request path and make the result observable.
