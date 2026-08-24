@@ -4,6 +4,6 @@ The portfolio is live at:
 
 https://cleidyanne-castro.github.io/cleidyanne-castro/
 
-For now I am keeping the free GitHub Pages address. If I buy a domain later, I will configure the host records, wait for propagation, verify HTTPS, and then update both the CV and LinkedIn profile.
+The current deployment uses the free GitHub Pages address. A custom domain can be added later with DNS records, HTTPS verification, and updated CV and LinkedIn links.
 
-The FlyRank completion badge is not available yet. It belongs in the final capstone update after approval, so I did not create a placeholder badge or claim one exists.
+The FlyRank completion badge is not available yet. It can be added after capstone approval, so this submission does not claim a badge that has not been issued.
