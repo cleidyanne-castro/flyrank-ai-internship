@@ -1,18 +1,16 @@
 # The Plan to Keep Building
 
-## Next 30 days
+## Next month
 
-- Add a real booking link when a scheduling page is available.
-- Expand two project cards into case studies with architecture and tradeoffs.
+- Get a real booking link instead of implying that email is a scheduling system.
 - Run the site on a physical phone and in a private window.
-- Add a short technical writing section.
+- Expand two project cards into case studies with architecture, tradeoffs, and measurable results.
+- Publish a short note about data quality or RAG evaluation.
 
-## Next 90 days
+## Next quarter
 
 - Connect a custom domain.
-- Publish one reusable data quality or RAG utility.
-- Add an end-to-end demo with monitored evaluation results.
+- Release one small data quality or security utility.
+- Add evaluation results and monitoring to one AI project.
 
-## Decision rule
-
-Every new portfolio item must show a real problem, a technical choice, and evidence that the result works.
+My filter for new work is simple: it must show a real problem, a technical decision, and evidence that the result works.
