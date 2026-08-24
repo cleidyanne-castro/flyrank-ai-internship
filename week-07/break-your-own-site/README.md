@@ -1,19 +1,22 @@
 # Break Your Own Site
 
-## Test target
+I tested the live portfolio as if I had never opened it before.
 
-Portfolio pages:
-- https://cleidyanne-castro.github.io/cleidyanne-castro/
-- https://cleidyanne-castro.github.io/cleidyanne-castro/pt.html
+## Checks
 
-## Failure cases checked
+- Opened the English and Portuguese pages directly.
+- Checked the layout at a narrow viewport.
+- Followed each featured project link.
+- Opened the CV link.
+- Checked the GitHub and LinkedIn links.
+- Confirmed the page title and description metadata.
+- Looked for any visible repository count that still said eight or four.
+- Tried empty and noisy paths instead of only following the happy path.
 
-- A narrow viewport must collapse the two-column layout.
-- Project links must open the intended repositories.
-- CV links must resolve to the public PDF.
-- The Portuguese page must remain reachable from the English page.
-- No private API key or server dependency is required for the static site.
+## Fixes
 
-## Result
+The obvious fixes were already applied before this submission: the site now uses the correct count of 16 repositories, the Portuguese page exists, and the recruiter links point to public destinations.
 
-The layout has responsive rules for small screens, four public project links, CV links, language switching, and a static GitHub Pages deployment. Known follow-up work is a physical phone check and a future custom domain.
+## Limitations
+
+I still need one physical phone check and a custom-domain check. Neither is required for the current GitHub Pages launch.
