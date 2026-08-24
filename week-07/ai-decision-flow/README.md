@@ -1,21 +1,18 @@
-# Build an AI Decision Flow
+# AI Decision Flow
 
-## Design
+This is the workflow I would use for a data and security triage service.
 
-The workflow is: receive a message, classify it, route urgent cases, request human review when confidence is low, and finish with a logged decision.
+## Flow
 
-## States
+1. Receive a message with an id.
+2. Validate the input at the boundary.
+3. Classify the message and keep the confidence score.
+4. Route high-risk cases to an urgent queue.
+5. Send low-confidence cases to human review.
+6. Store the decision, reason, and timestamp.
 
-1. Received
-2. Classified
-3. Urgent route
-4. Human review
-5. Completed
+The important rule is that a low confidence result cannot silently become an automated decision. Every transition keeps the message id so a retry does not create a second decision.
 
-## Reliability notes
+## Scope
 
-Every transition carries the message id and decision reason. Low confidence never skips human review. A failed step can be retried without creating a second decision.
-
-## Evidence
-
-This design extends the Week 6 judgement endpoint and is documented as a state graph before implementation. The next implementation step is wiring the graph to React Flow and an Inngest function.
+This submission documents the state design and the failure rules. The next implementation would connect the states to React Flow for visibility and Inngest for retries and background execution.
