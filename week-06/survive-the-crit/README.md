@@ -1,53 +1,38 @@
 # Survive the Crit
 
-## Proof statement
+## What I asked people to judge
 
-In ten seconds, a recruiter should understand that I build reliable data platforms and applied AI workflows, with enough cloud and analytics depth to move from messy inputs to useful decisions.
+In ten seconds, a recruiter should understand that I work with data platforms, analytics engineering, cloud services, and applied AI.
 
-## Review source
+The two questions were:
 
-I used direct review feedback from the portfolio owner during the build. The reviewer tested the live pages and focused on first impression, recruiter clarity, readability, and technical credibility.
+1. What do you think I do?
+2. Does the work make you believe I can do it well?
 
-Questions used:
+## Feedback that came back
 
-1. In ten seconds, what do I do?
-2. Would you believe I am good at it?
+The portfolio direction was clear, and the typography and layout were strong. The practical issues were easier to see after looking at the site on different screens:
 
-## Feedback received
-
-The reviewer understood the data and AI direction and liked the typography and layout. The first version still had small text, a mixed neon and pastel palette, weak visual direction, an incorrect repository count, and no Portuguese recruiter page. The project section also needed tighter selection.
-
-## Must-fix
-
-- Increase small text for first-pass readability.
-- Replace the mixed palette with dark blue and violet.
-- Use a stronger data and AI visual direction.
-- Correct the public repository count to 16.
-- Add a Portuguese recruiter page.
-- Keep the selected work focused on four relevant projects.
-- Add working CV and GitHub links to the Portuguese page.
-
-## Nice-to-have
-
-- Add a custom domain later.
-- Add a scheduling link when a real booking page exists.
-- Expand the short project cards into full case studies.
-- Test the site on a physical phone and in a private window.
+- the small text was hard to scan
+- the neon and pastel colors competed with the technical message
+- the first image did not communicate data and AI strongly enough
+- the repository count was wrong
+- the Portuguese recruiter page was missing
+- showing every project would make the section less focused
 
 ## Changes made
 
-The live English and Portuguese pages now use the high-contrast dark blue and violet direction, readable body text, the corrected count of 16 public repositories, four selected projects, and working links to GitHub, LinkedIn, and the CV. The Portuguese page is available at:
+I increased the body text, moved the palette to dark blue and violet, replaced the visual direction, corrected the count to 16 public repositories, added the Portuguese page, and kept four projects in the featured section. I also added CV and GitHub links to the Portuguese page.
 
-https://cleidyanne-castro.github.io/cleidyanne-castro/pt.html
+Live pages:
 
-The English page is available at:
+- https://cleidyanne-castro.github.io/cleidyanne-castro/
+- https://cleidyanne-castro.github.io/cleidyanne-castro/pt.html
 
-https://cleidyanne-castro.github.io/cleidyanne-castro/
+## What is still open
 
-The changes are deployed from:
+This review used the real feedback collected while the portfolio was being built. A separate friend or peer has not yet completed the same two-question review. That is the next useful check, not something I will pretend has already happened.
 
-https://github.com/cleidyanne-castro/cleidyanne-castro
+## Nice-to-have items
 
-## Reflection
-
-I treated the feedback as a usability test rather than defending the first version. The main fixes target the first ten seconds: clear positioning, readable text, fewer projects, and direct recruiter links.
+A custom domain, a real booking link, longer case studies, and a physical phone check can come after the core portfolio is stable.
