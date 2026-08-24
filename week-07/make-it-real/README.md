@@ -60,3 +60,13 @@ The must-fix items were applied to the live files. The remaining ideas, such as 
 ## Verification still needed
 
 This record does not claim a physical phone test or a formal mentor checkpoint. Those require a real device or an external reviewer. The site is ready for that check, and the remaining risk is documented instead of being presented as completed.
+
+
+## Repository link check
+
+The four selected repository URLs resolve to public repositories:
+
+- aws-digital-bank-triage-assistant
+- ecommerce-rag-chatbot
+- bcb-databricks-case
+- lh-nautical-lighthouse
