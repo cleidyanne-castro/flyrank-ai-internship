@@ -15,8 +15,8 @@ https://cleidyanne-castro.github.io/cleidyanne-castro/
 
 ### Known limitations
 
-- The site is hosted on the GitHub Pages subdomain, not a custom domain.
-- Analytics has not been installed.
+- The site is hosted on the GitHub Pages subdomain, not a custom domain. This is the current free fallback.
+- Analytics has not been installed because a provider account has not been created.
 - A FlyRank graduate badge has not been added because there is no verification URL available in this repository.
 - A physical phone test and formal hardening review still need to happen.
 - The live site has no server-backed contact form. The Week 8 project filter is client-side.
@@ -27,6 +27,7 @@ https://cleidyanne-castro.github.io/cleidyanne-castro/
 - Verified that the Portuguese page links to the same four repositories.
 - Verified that the English and Portuguese pages have titles and descriptions.
 - Verified that the English and Portuguese pages contain Open Graph title and description tags.
+- Added a favicon and web manifest to both public pages.
 - Ran the local production build successfully.
 - Checked that the responsive CSS includes a narrow-screen layout.
 - Checked that the new project filter has All, AI, Data, and Analytics states.
