@@ -25,3 +25,9 @@ A public portfolio assembled with real projects, a working English page, a Portu
 The portfolio repository is maintained separately:
 
 https://github.com/cleidyanne-castro/cleidyanne-castro
+
+### Week 6: Explain It Like You Built It
+
+A plain-words explanation of the portfolio navigation and GitHub Pages deployment path.
+
+[Open the Week 6 evidence](week-06/explain-the-build)
