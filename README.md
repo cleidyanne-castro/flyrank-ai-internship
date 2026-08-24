@@ -1,23 +1,27 @@
-# The Prompt Ladder
+# FlyRank AI Internship
 
-Week 2 assignment completed as part of the FlyRank AI Internship.
+Work completed for the General AI Fluency track.
 
-## Objective
+## Assignments
 
-Improve a weak prompt through five controlled iterations, adding exactly one layer at each stage and comparing the resulting outputs.
+### Week 2: The Prompt Ladder
 
-## Task selected
+A controlled five-step prompt improvement exercise focused on reviewing a FastAPI CRUD endpoint.
 
-Reviewing a FastAPI CRUD endpoint for bugs, maintainability issues, and API design improvements.
+[Open the Week 2 folder](week-02/prompt-ladder)
 
-## Techniques explored
+### Week 5: Ship the Ugly One
 
-- Clearer goal
-- Defined audience
-- Real project context
-- Output structure
-- Verification requirements
+A public portfolio assembled with real projects, a working English page, a Portuguese page for Brazilian recruiters, a first user reaction, and an honest list of unfinished parts.
 
-## Deliverable
+[Open the Week 5 evidence](week-05/ship-the-ugly-one)
 
-The complete prompt ladder, outputs, observations, and reusable final template are available in the attached PDF.
+[Open the live portfolio](https://cleidyanne-castro.github.io/cleidyanne-castro/)
+
+[Open the Portuguese page](https://cleidyanne-castro.github.io/cleidyanne-castro/pt.html)
+
+## Portfolio source
+
+The portfolio repository is maintained separately:
+
+https://github.com/cleidyanne-castro/cleidyanne-castro
