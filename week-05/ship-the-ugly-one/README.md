@@ -1,58 +1,53 @@
-# Week 5: Ship the Ugly One
+# Week 5: Personal Website Live
 
-This is the first public version of my portfolio. The goal was to make the real work reachable before polishing every detail.
-
-## Live deliverables
-
-Portfolio in English:
+## Live URL
 
 https://cleidyanne-castro.github.io/cleidyanne-castro/
 
-Portfolio for Brazilian recruiters:
+Portuguese recruiter page:
 
 https://cleidyanne-castro.github.io/cleidyanne-castro/pt.html
 
-The English page includes the main navigation, selected data and AI projects, an about section, a résumé link, LinkedIn, GitHub, and contact links. The Portuguese page follows the same path for Brazilian readers.
+The site is live over HTTPS on the GitHub Pages free domain. GitHub Pages is an accepted hosting path for this assignment.
 
-## What is live
+## What the site contains
 
-The portfolio currently presents four selected repositories:
+The page explains my focus in data engineering, analytics engineering, cloud, and applied AI. It links to:
 
-- AWS Digital Bank Triage Assistant
-- E-commerce RAG Chatbot
-- BCB Databricks Case
-- LH Nautical Lighthouse
+- LinkedIn: https://www.linkedin.com/in/cleidyanne-castro-pereira-612506160/
+- GitHub: https://github.com/cleidyanne-castro
+- CV: https://cleidyanne-castro.github.io/cleidyanne-castro/CVDataCleidyanneCastro.pdf
+- Email contact: mailto:annecbs93@gmail.com
 
-The GitHub profile shows the full set of 16 public repositories. The portfolio uses the four projects that best communicate a coherent direction in data engineering, analytics engineering, cloud, and applied AI.
+It also includes a Portuguese version for Brazilian recruiters and four selected project links.
 
-## Build notes
+## DNS walkthrough
 
-The public version is a static GitHub Pages site. The source portfolio is built with Next.js and TypeScript, and the GitHub Pages copy keeps the same content in simple HTML and CSS.
+DNS is the directory that connects a human-readable website address to the server that can answer requests.
 
-The current visual system uses a dark navy background, cobalt and violet accents, large editorial headings, and a data and AI hero visual with a slow motion effect. The English and Portuguese pages are intentionally separate so each audience can read the content in their own language.
+When someone types an address, the browser first asks a DNS resolver. The resolver checks whether it already knows the answer. If it does not, it asks the relevant nameserver for the domain. The nameserver returns a DNS record, such as an A record with an IP address or a CNAME record that points one hostname to another. The browser then connects to the destination returned by DNS and asks for the page.
+
+A CNAME is useful when a subdomain should follow another hostname. For example, `www.example.com` can point to a host's assigned address with a CNAME. The browser still starts with the visitor's address, but DNS tells it where that address is served.
+
+This portfolio currently uses the free GitHub Pages address, so I do not need to configure a custom domain or write DNS records for the first launch. If I later buy a domain, I would add the records requested by the host, verify that the record points to the correct GitHub Pages or hosting address, wait for DNS propagation, and then confirm HTTPS on the final address.
+
+## Hosting decision
+
+I chose GitHub Pages because the portfolio is static, the repository is already public, and the deployment workflow is easy to inspect. A commit to main triggers the workflow, the site files are uploaded, and GitHub serves them over HTTPS.
+
+The source project uses Next.js and TypeScript. The public copy is plain HTML and CSS so the deployed files remain understandable and maintainable.
 
 ## First real reaction
 
-Reviewer: the portfolio owner, a data and AI professional who used the site during the build.
+The first reviewer was the portfolio owner, a data and AI professional who used the site during the build. They liked the typography, layout, and technology direction. Their practical feedback was to increase small text, use dark blue and violet, add a Portuguese page, correct the repository count from eight to sixteen, and narrow the work section to four projects. Those changes are now live.
 
-Reaction:
+## Still rough
 
-The reviewer liked the typography, layout, and technology-focused visual direction. They asked for better readability in smaller text, a stronger dark blue and violet palette, a Portuguese page for Brazilian recruiters, and a clearer project count. They also corrected the repository count from eight to sixteen and selected four projects that best represent the intended portfolio direction.
-
-Those changes were applied before this submission. This was an informal real-user review, not a formal recruiter review.
-
-## Still ugly
-
-- The public site is static, so it does not have a contact form yet.
-- The English and Portuguese pages are maintained separately and can drift if one is changed without the other.
-- The project cards are concise summaries, not full case studies with metrics and architecture diagrams.
-- There is no custom domain or analytics setup yet.
-- The hero image is embedded in the page to keep the GitHub Pages deployment self-contained.
-- A full accessibility and performance pass on several physical devices is still pending.
-
-## What I can explain
-
-I can explain the page structure, the project data model, the card rendering, the responsive CSS, the GitHub Pages workflow, and the reason for separating the English and Portuguese pages. I also understand the deployment path from a commit on the main branch to the live GitHub Pages URL.
+- There is no custom domain yet.
+- The contact action is email rather than a scheduling system.
+- The English and Portuguese files are maintained separately.
+- The project cards are short summaries, not full case studies.
+- A physical phone and private-window check should still be performed before final launch.
 
 ## Repository
 
