@@ -1,17 +1,15 @@
-# PDF report generator
+# PDF Report Generator
 
-## Goal
-
-Generate a recruiter-ready PDF summary from structured project data.
+The report is meant to turn structured project data into something a recruiter can read quickly.
 
 ## Input
 
-The generator accepts a JSON object with project name, role, summary, technologies, links, and outcomes.
+The generator expects a project name, role, short summary, technologies, links, and outcomes.
 
 ## Output
 
-It produces a readable PDF with a title, short summary, project sections, links, and a generated timestamp. Missing optional fields are omitted instead of rendered as empty headings.
+The PDF has a title, summary, project sections, links, and a generated timestamp. Empty optional fields are left out instead of becoming blank headings.
 
-## Verification
+## Checks
 
-The output must open as a valid PDF, preserve links, and keep headings together with their text. The source data remains separate from layout code.
+A generated file should open as a valid PDF, keep each heading with its text, and preserve links. The data object stays separate from the layout code so the same template can be reused for another project.
