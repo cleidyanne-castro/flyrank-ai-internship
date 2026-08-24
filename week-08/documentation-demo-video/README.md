@@ -16,4 +16,4 @@
 - Portfolio source: https://github.com/cleidyanne-castro/cleidyanne-castro
 - Capstone: https://github.com/cleidyanne-castro/flyrank-capstone-widget-platform
 
-The demo should stay short. The point is to show the path from positioning to working evidence, not narrate every file.
+The demo follows the path from positioning to working evidence.
