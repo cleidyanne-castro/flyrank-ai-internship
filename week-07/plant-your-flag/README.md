@@ -1,15 +1,9 @@
-# Plant Your Flag: Domain + Badge
+# Plant Your Flag
 
-## Current position
-
-The portfolio is live on the free GitHub Pages URL:
+The portfolio is live at:
 
 https://cleidyanne-castro.github.io/cleidyanne-castro/
 
-## Domain plan
+For now I am keeping the free GitHub Pages address. If I buy a domain later, I will configure the host records, wait for propagation, verify HTTPS, and then update both the CV and LinkedIn profile.
 
-A custom domain is intentionally deferred. When purchased, the DNS setup will use the host records requested by GitHub Pages, then HTTPS will be verified before updating the CV and LinkedIn profile.
-
-## Badge plan
-
-The official FlyRank completion badge will be added after capstone approval, as required by the portal. No badge asset was invented or committed before it was issued.
+The FlyRank completion badge is not available yet. It belongs in the final capstone update after approval, so I did not create a placeholder badge or claim one exists.
