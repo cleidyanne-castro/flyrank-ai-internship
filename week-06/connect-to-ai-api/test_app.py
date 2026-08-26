@@ -40,3 +40,13 @@ async def test_empty_message_is_rejected():
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
         response = await client.post("/judge", json={"message": ""})
     assert response.status_code == 422
+
+
+@pytest.mark.anyio
+async def test_kill_switch_is_read_for_each_request(monkeypatch):
+    monkeypatch.setenv("AI_KILL_SWITCH", "true")
+    monkeypatch.setenv("AI_API_KEY", "not-used-in-kill-switch-test")
+    async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
+        response = await client.post("/judge", json={"message": "The service is down"})
+    assert response.status_code == 200
+    assert response.json()["label"] == "urgent"

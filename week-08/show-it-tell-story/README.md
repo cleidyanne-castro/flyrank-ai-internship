@@ -11,6 +11,18 @@ The portfolio supports that story with:
 - BCB Databricks Case
 - LH Nautical Lighthouse
 
+## Proof points
+
+| Claim | Portfolio evidence |
+| --- | --- |
+| Reliable decisions from messy inputs | Data and AI project cards |
+| Practical systems | Backend and cloud project links |
+| Trustworthy operation | Validation, contracts, monitoring, and safe failure language |
+
 Live page:
 
 https://cleidyanne-castro.github.io/cleidyanne-castro/
+
+## Limits
+
+This submission explains the positioning of the portfolio. It does not claim that every project has the same production maturity or that every result has a published business metric.

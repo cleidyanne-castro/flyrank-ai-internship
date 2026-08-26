@@ -6,7 +6,6 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 app = FastAPI(title="Message Judgement API")
-KILL_SWITCH = os.getenv("AI_KILL_SWITCH", "false").lower() == "true"
 AI_URL = os.getenv("AI_URL", "https://api.openai.com/v1/chat/completions")
 AI_MODEL = os.getenv("AI_MODEL", "gpt-4o-mini")
 AI_KEY = os.getenv("AI_API_KEY", "")
@@ -21,7 +20,7 @@ class JudgeResponse(BaseModel):
 
 def fallback_judgement(message: str) -> JudgeResponse:
     text = message.lower()
-    urgent = any(word in text for word in ("outage", "fraud", "blocked", "urgent", "breach"))
+    urgent = any(word in text for word in ("outage", "down", "unavailable", "fraud", "blocked", "urgent", "breach"))
     return JudgeResponse(
         label="urgent" if urgent else "normal",
         confidence=0.72 if urgent else 0.55,
@@ -29,7 +28,8 @@ def fallback_judgement(message: str) -> JudgeResponse:
     )
 
 async def ask_model(message: str) -> JudgeResponse:
-    if KILL_SWITCH or not AI_KEY:
+    kill_switch = os.getenv("AI_KILL_SWITCH", "false").lower() == "true"
+    if kill_switch or not AI_KEY:
         return fallback_judgement(message)
 
     payload = {

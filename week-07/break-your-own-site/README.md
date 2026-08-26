@@ -2,21 +2,24 @@
 
 I tested the live portfolio as if I had never opened it before.
 
-## Checks
+## Test matrix
 
-- Opened the English and Portuguese pages directly.
-- Checked the layout at a narrow viewport.
-- Followed each featured project link.
-- Opened the CV link.
-- Checked the GitHub and LinkedIn links.
-- Confirmed the page title and description metadata.
-- Looked for any visible repository count that still said eight or four.
-- Tried empty and noisy paths instead of only following the happy path.
+| Case | Expected result | Result |
+| --- | --- | --- |
+| English page | Page loads with a descriptive title | Passed |
+| Portuguese page | Page loads without a broken navigation path | Passed |
+| Empty form field | Browser blocks the submission | Passed by native validation |
+| Invalid email | Browser blocks the submission | Passed by native validation |
+| Project links | Each visible link opens a public destination | Passed |
+| CV link | Public CV destination opens | Passed |
+| Narrow viewport | Text and form remain usable without horizontal scrolling | Passed in browser viewport |
+| Contact delivery | Message reaches the configured mailbox | Requires mailbox access |
+| Custom domain | Domain resolves over HTTPS | Pending domain setup |
 
 ## Fixes
 
-The obvious fixes were already applied before this submission: the site now uses the correct count of 16 repositories, the Portuguese page exists, and the recruiter links point to public destinations.
+The site uses the current repository count, includes the Portuguese page, and points recruiter links to public destinations. The contact form now exposes its external data flow and reports the submission state.
 
 ## Limitations
 
-I still need one physical phone check and a custom-domain check. Neither is required for the current GitHub Pages launch.
+The mailbox delivery check, physical phone check, and custom-domain check remain outside this repository evidence.
