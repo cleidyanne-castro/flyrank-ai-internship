@@ -19,6 +19,8 @@ def run_job(
 ) -> JobResult:
     if not slug:
         raise ValueError("slug is required")
+    if max_attempts < 1:
+        raise ValueError("max_attempts must be at least 1")
     if slug in store:
         return store[slug]
 

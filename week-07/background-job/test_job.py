@@ -42,6 +42,10 @@ class BackgroundJobTests(unittest.TestCase):
         self.assertIs(first, second)
         self.assertEqual(calls, ["same"])
 
+    def test_attempt_limit_must_be_positive(self):
+        with self.assertRaises(ValueError):
+            run_job("invalid", lambda slug: {}, {}, max_attempts=0)
+
 
 if __name__ == "__main__":
     unittest.main()

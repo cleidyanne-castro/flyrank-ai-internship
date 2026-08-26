@@ -10,13 +10,14 @@ The useful connection to my portfolio is the same one I use in data engineering:
 
 ```bash
 python3 -m unittest -v
+python3 run_demo.py
 ```
 
-The tests use an injected fetcher, so they do not require a network connection. They cover a successful fetch, a transient failure followed by success, a permanent failure, and duplicate job submission.
+The tests use an injected fetcher, so they do not require a network connection. They cover a successful fetch, a transient failure followed by success, a permanent failure, duplicate job submission, and invalid retry configuration. The demo prints the completed, retried, and failed result states.
 
 ## Evidence
 
-`job.py` exposes a small worker function with a bounded retry count, explicit status, validation, and a slug-based idempotency key. `test_job.py` verifies each result.
+`job.py` exposes a small worker function with a bounded retry count, explicit status, validation, and a slug-based idempotency key. `test_job.py` verifies each result. `run_demo.py` provides a deterministic success, retry, and failure run.
 
 ## Limitations
 
