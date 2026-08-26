@@ -1,22 +1,37 @@
 # Plant Your Flag
 
-The portfolio is live at:
+The portfolio is live at the accepted free fallback address:
 
 https://cleidyanne-castro.github.io/cleidyanne-castro/
 
-The current deployment uses the free GitHub Pages address. A custom domain can be added later with DNS records, HTTPS verification, and updated CV and LinkedIn links.
+The Portuguese version is available at:
 
-The FlyRank completion badge is not available yet. It can be added after capstone approval, so this submission does not claim a badge that has not been issued.
+https://cleidyanne-castro.github.io/cleidyanne-castro/pt.html
 
-## Verification checklist
+## Verification evidence
 
-| Check | Expected result | Current result |
+Checked on 2026-08-26 against the public GitHub Pages deployment.
+
+| Check | Expected result | Observed result |
 | --- | --- | --- |
-| Public URL | GitHub Pages page loads | Verified in the repository record |
-| HTTPS | Page uses HTTPS | Verified by the URL |
-| Custom domain | DNS and HTTPS resolve for the chosen domain | Not configured |
-| Badge | Badge is visible only after issuance | Not issued |
+| Public URL | The portfolio loads | Pass. English and Portuguese pages load |
+| HTTPS | The public address uses HTTPS | Pass. Both pages use HTTPS |
+| Page title | A descriptive title is present | Pass. Each language has a localized title |
+| Share metadata | Open Graph title, description, and type are present | Pass. Metadata is present on both pages |
+| Favicon | The document links a favicon | Pass. `favicon.svg` is linked |
+| Web manifest | The document links the manifest | Pass. `site.webmanifest` is linked |
+| Mobile layout | No horizontal overflow at the checked viewport | Pass. English and Portuguese pages were checked |
+| Custom domain | DNS and HTTPS resolve for a chosen custom domain | Not configured |
+| Analytics | A provider script reports visits | Not installed. No analytics account or measurement ID is available |
+| FlyRank badge | The issued badge is visible and links to its verification page | Not issued. No badge is claimed |
 
-## Limits
+## Reproduction
 
-The free GitHub Pages URL is the current public address. No custom domain or completion badge is claimed until each is actually configured or issued.
+1. Open the English or Portuguese URL in a browser.
+2. Inspect the document head for the title, description, Open Graph metadata, favicon, and manifest.
+3. Resize the viewport to a mobile width and confirm that the page remains readable without horizontal scrolling.
+4. When an analytics account and the FlyRank badge become available, add them to the live site and update this table with the verification date.
+
+## Limitations
+
+The current deployment uses the free GitHub Pages address. A custom domain is not configured. Analytics is not installed because no provider account or measurement ID is available. The FlyRank badge is intentionally not claimed until it is issued with an official verification URL.
