@@ -21,3 +21,5 @@ The repository contains the changed portfolio files and the review checklist. Th
 https://cleidyanne-castro.github.io/cleidyanne-castro/
 
 The review is limited to the checks listed above. A separate peer review has not been claimed as completed.
+
+Detailed checks are recorded in [EVIDENCE.md](EVIDENCE.md).
