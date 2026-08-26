@@ -1,0 +1,16 @@
+{
+  "project_name": "AWS Digital Bank Triage Assistant",
+  "role": "Data and AI Engineering project",
+  "summary": "A cloud workflow that classifies digital banking cases and routes them by intent and urgency.",
+  "technologies": ["Python", "AWS", "RAG"],
+  "links": [
+    {
+      "label": "Repository",
+      "url": "https://github.com/cleidyanne-castro/aws-digital-bank-triage-assistant"
+    }
+  ],
+  "outcomes": [
+    "Structured case routing with explicit decision rules",
+    "Documented data contracts and failure handling"
+  ]
+}
